@@ -49,6 +49,7 @@ class Model(object):
             self.info = req['info']
         self.predicted_field = req['predicted_field']
         self.seen = 0
+        self.temporal_field = req['tfield']
         self.last = None
         self.deleted = False
         self.url = url
