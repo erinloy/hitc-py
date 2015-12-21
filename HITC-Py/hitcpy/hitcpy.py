@@ -68,7 +68,7 @@ class Model(object):
             return None
         else:
             r = r.json()
-            self.seen = r['predictionNumber']
-            self.last = r['rawInput']
+            self.seen = r[len(r) - 1]['predictionNumber']
+            self.last = r[len(r) - 1]['rawInput']
             return r
 
